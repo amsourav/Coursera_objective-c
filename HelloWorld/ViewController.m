@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+    @property (weak, nonatomic) IBOutlet UITextField *homeLabel;
 @end
 
 @implementation ViewController
@@ -22,6 +22,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)homeButtonTap:(id)sender {
+    self.homeLabel.text = @"It's Working!";
 }
 
 @end
